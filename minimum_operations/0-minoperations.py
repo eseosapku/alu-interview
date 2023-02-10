@@ -1,21 +1,16 @@
 #!/usr/bin/python3
-
-"""Minimum Operations"""
+"""
+Minimum Operation"""
 
 def minOperations(n):
-"""Minimum Operations"""
-    if n <= 1:
+    """Return 0 if n is less than or equal to 0"""
+    if n <= 0:
         return 0
 
-    operations = 0
-    x = 2
-    while x <= n:
-        while n % x == 0:
-            operations += i
-            n /= x
-        x += 1
+    operations = 0 """ Initialize the number of operations to 0"""
 
-    if operations == 0:
-        return n
-
-    return operations
+    for t in range(2, n/2):
+        while(n % t == 0):
+            operations += t """Increase the number of operations by 1"""
+            n = n / t
+    return(operations)
