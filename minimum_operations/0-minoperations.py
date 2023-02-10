@@ -7,7 +7,7 @@ def minOperations(n):
     if n <= 0:
         return 0
 
-    operations = 0 """Initialize the number of operations to 0"""
+    operations = 0 
 
     for t in range(2, n/2):
         while(n % t == 0):
