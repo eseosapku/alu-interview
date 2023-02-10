@@ -11,6 +11,6 @@ def minOperations(n):
 
     for t in range(2, n/2):
         while(n % t == 0):
-            operations += t """Increase the number of operations by 1"""
+            operations += t 
             n = n / t
     return(operations)
