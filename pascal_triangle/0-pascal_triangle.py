@@ -8,10 +8,10 @@ def pascal_triangle(n):
     """
     comment
     """
-    if x <= 0:
+    if n <= 0:
         return []
     pascal = [[1]]
-    for number in range(x-1):
+    for number in range(n-1):
         pascal.append(
             [a+b for a, b in zip([0] + pascal[-1], pascal[-1] + [0])])
 
