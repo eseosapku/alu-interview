@@ -1,5 +1,10 @@
+#!/usr/bin/python3
+"""
+comment
+"""
 
-    ascal_triangle(n):
+
+def pascal_triangle(n):
     """
     comment
     """
